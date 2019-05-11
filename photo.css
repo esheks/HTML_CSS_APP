@@ -1,0 +1,66 @@
+body {
+    background-color: lightblue;
+  }
+  
+h1 {
+    color: black;
+    text-align: left;
+    
+  }
+  
+p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+.menu-bg{
+    background-color:#1abc9c
+  }
+.catalog{
+    text-align: center;
+    color: black;
+}
+#nav1{
+    font-size: 20px;
+    color:  white;
+}
+/*.picture{ 
+    
+    height: 200px;
+    width: 200px;
+    
+    border-image: 10px;
+    border-radius: 1px;
+    
+    justify-content: space-evenly;
+}*/
+#chelseah1{
+  background-color: #1abc9c;
+  text-align: center;
+}
+.error-messageusername, .error-messageimage, .error-messagetextarea {
+  color:red;
+}
+.imageresizer{
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+}
+.video1{
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+}
+.squad{
+  height: 100;
+  width: auto;
+  object-fit: cover;
+}
+  
+  
+  
+  
+
+
+
+
+

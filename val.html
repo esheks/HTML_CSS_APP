@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="jquery-3.4.1.min.js"></script>
+        <script>
+        $(document).ready(function(){
+            $(".error-message").hide();
+            $("#username").focusout (function(){
+                var username = $(this).val();
+                var node = $(this).parent().find(".error-message");
+                if(username.length < 6){
+                   // $(this).parent().find(".error-message").show();
+                   node.show();
+
+                }
+                else
+                {
+                    //$(this).parent().find(".error message").hide();
+                    node.hide();
+                }
+            });
+                $("#confirm_password").focusout(function(){
+
+                    var confirm_password = $(this).val();
+                    var password = $("#password").val();
+                    var node = $(this).parent().find(".error-message");
+                
+                if(confirm_password != password)
+                {
+                
+                    node.show();}
+                else
+                {
+                    console.log('hide');
+                        node.hide();
+                    }
+                
+            });
+        
+        });
+        </script>
+
+    </head>
+    <body>
+        <form>
+            <p>
+                <label>Username</label>
+                <input type="text" id="username"><br>
+                <span class="error-message">Username should be more than 6 characters</span>
+            </p> 
+            <p>
+                <label>Password</label>
+                <input type="password" id="password">
+                  
+            </p> 
+            <p>
+                    <label>Confirm password</label>
+                    <input type="password" id="confirm_password"><br>
+                    <span class="error-message">your password do not match</span>
+                </p>
+                <button type="button">Submit</button>
+
+
+
+        </form>
+        <style>.error-message{
+                color:red;
+            }
+        </style>
+        
+        
+        
+
+
+
+    </body>
+
+
+
+</html>
