@@ -19,7 +19,7 @@ p {
     text-align: center;
     color: black;
 }
-#nav1{
+#navone, #navtwo, #navthree{
     font-size: 20px;
     color:  white;
 }
